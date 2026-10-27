@@ -2,6 +2,13 @@
 
 Headless Ubuntu development host with selectable **Tailscale** or **WireGuard** access. Run OpenCode in tmux so work continues after you disconnect your laptop.
 
+## Why this exists
+
+I work from a laptop and am often on the move. I want ongoing agentic development tasks to keep running when I close the lid, change networks, or disconnect, so I can reconnect and pick up where I left off.
+
+- **Keep progress independent of my laptop.** Running agents on a dedicated VM in tmux lets work continue through client disconnections while the VM remains running.
+- **Reduce wasted tokens and time.** Restarting interrupted tasks, rebuilding context, and repeating analysis is frustrating, consumes extra tokens, and slows development down. A persistent remote environment reduces that repeated work.
+
 ## Defaults
 
 | Component | Default |
